@@ -1,0 +1,968 @@
+:root
+{
+  /* Color */
+  --brand-yellow: #F2CB05;
+  --brand-black: #130806;
+  --brand-brown: #472c1a;
+  --color-red: #f12929;
+
+  /* Fonts */
+  --font-page: 16px;
+}
+
+body 
+{
+  font-family: 'Share Tech', sans-serif;
+  font-size: var(--font-page);
+  font-weight: 400;
+  box-sizing: border-box;
+  background-color: #25415700;
+}
+
+/****************/
+/* Tools */
+/****************/
+.padding-sections {
+  padding: 80px 70px;
+}
+
+.title-new-section 
+{
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.55em;
+  text-transform: uppercase;
+  color: var(--brand-black);
+  margin: 0px;
+}
+
+.shadow-text {
+  text-shadow: -3px 2px 8px var(--brand-black);
+}
+
+.gradient-brownTolight 
+{
+  background: #130806;
+  background: -moz-linear-gradient(90deg, #130806 50%, #132e36 100%);
+  background: -webkit-linear-gradient(90deg, #130806 50%, #132e36 100%);
+  background: linear-gradient(90deg, #130806 50%, #132e36 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#130806",endColorstr="#132e36",GradientType=1);
+}
+
+.gradientDown-darkBlue-to-lightBlue
+{
+  background: #130806;
+  background: -moz-linear-gradient(180deg, #130806 0%, #132e36 100%);
+  background: -webkit-linear-gradient(180deg, #130806 0%, #132e36 100%);
+  background: linear-gradient(180deg, #130806 0%, #132e36 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#130806",endColorstr="#132e36",GradientType=1);
+}
+
+.opacityDown-brownToLight 
+{
+  background: #13080693;
+  background: -moz-linear-gradient(90deg, #13080693 0%, #362013 100%);
+  background: -webkit-linear-gradient(90deg, #13080693 0%, #362013 100%);
+  background: linear-gradient(90deg, #13080693 0%, #362013 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#13080693",endColorstr="#362013",GradientType=1);
+}
+
+.divider 
+{
+  width: 200px;
+  height: 1px;
+  margin: auto;
+}
+
+.shadow-divider
+{
+  -webkit-box-shadow: inset 0px 4px 16px -17px #ffffff;
+  -moz-box-shadow: inset 0px 4px 16px -17px #ffffff;
+  box-shadow: inset 0px 4px 16px -17px #ffffff;
+}
+
+.shadow-background 
+{
+  background: #13080693;
+  background: -moz-linear-gradient(90deg, #13080693 0%, #362013 100%);
+  background: -webkit-linear-gradient(90deg, #13080693 0%, #362013 100%);
+  background: linear-gradient(90deg, #13080693 0%, #362013 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#13080693",endColorstr="#362013",GradientType=1);
+}
+
+/* Play Now */
+.playNow-container {
+  display: none;
+}
+/* End Play Now */
+
+/* Toast */
+#toast-container 
+{
+  top: auto !important;
+  bottom: 80px !important;
+  left: auto !important;
+  right: 40px !important;
+}
+
+/* Arrows Splide */
+.splide__arrows .splide__arrow:hover
+{
+  transition: .3s;
+  border-color: transparent !important;
+  -webkit-box-shadow: 2px 2px 10px 1px #e7a61a;
+  -moz-box-shadow: 2px 2px 10px 1px #e7a61a;
+  box-shadow: 2px 2px 10px 1px #e7a61a;
+}
+
+.icon-dropdown 
+{
+  display: inline-block !important;
+  line-height: normal;
+  height: auto;
+  font-size: 1.1em;
+  margin-left: 2px;
+  color: #ffffff13;
+}
+
+/****************/
+/* Navbar Mobile */
+/****************/
+#navbarMobile {
+  transform: translateX(-300px);
+}
+
+#shadowMenu_mobile {
+  display: none;
+}
+
+/* Language Mobile */
+#languageMobile_menu {
+  height: 0px;
+}
+
+/* Language  */
+#language_menu {
+  height: 0px;
+}
+
+/****************/
+/* Gameplay And Roapmap*/
+/****************/
+.background-one-image
+{
+  background-image: url('../../resources/images/build-dubai.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  transform: scaleX(-1);
+}
+
+/****************/
+/* Promo */
+/****************/
+.promoPlatforms-style
+{
+  background: #130806;
+  background: -moz-linear-gradient(90deg, #130806 0%, #132e36 100%);
+  background: -webkit-linear-gradient(90deg, #130806 0%, #132e36 100%);
+  background: linear-gradient(90deg, #130806 0%, #132e36 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#130806",endColorstr="#132e36",GradientType=1);
+}
+
+/* Confetti */
+#promo-section #dropConfetti
+{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 750;
+}
+
+/****************/
+/* Gameplay */
+/****************/
+.gameplay-container {
+  transform: scaleX(-1) !important;
+}
+
+.gameplay-container .divider {
+  background-color: var(--brand-yellow);
+  width: 250px;
+}
+
+/* Slide */
+.gameplay-splide 
+{
+  margin-top: 60px;
+  cursor: pointer;
+}
+
+.gameplay-item {
+  padding: 10px 0px;
+}
+
+.gameplay-item .gamepaly-box 
+{
+  display: flex;
+  justify-content: center;
+}
+
+/* Splide Title */
+.gameplay-item .gameplay-description .gameplay-title 
+{
+  margin: 0px;
+  border-radius: 4px;
+  padding: 14px 16px;
+  -webkit-box-shadow: -9px 12px 6px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: -9px 12px 6px -4px rgba(0,0,0,0.75);
+  box-shadow: -9px 12px 6px -4px rgba(0,0,0,0.75);
+}
+
+.gameplay-item .gameplay-description .gameplay-title .title
+{
+  color: var(--brand-yellow);
+  text-transform: uppercase;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.gameplay-item .gameplay-description 
+{
+  margin-left: 40px;
+  max-width: 700px;
+  width: 55%;
+  min-width: 350px; 
+}
+
+.gameplay-item .gameplay-description .description 
+{
+  color: #fff !important;
+  margin-top: 24px;
+  font-size: 1em;
+  text-align: justify !important;
+}
+
+/* Picture */
+.gameplay-picture.gameplay-gold-picture {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.gameplay-picture .picture {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.gameplay-enemys-size 
+{
+  width: 360px;
+  height: 219px;
+}
+
+/****************/
+/* Character */
+/****************/
+.character-container {
+  transform: scaleX(-1) !important;
+}
+
+/* Content */
+.character-content 
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.character-content .character-picture {
+  width: 300px;
+}
+
+.character-content .character-picture .picture 
+{
+  width: 100%;
+  vertical-align: top;
+}
+
+/* Description */
+.character-content .character-description 
+{
+  width: 60%;
+  margin-left: 40px;
+  padding: 10px;
+}
+
+.character-content .character-description .description
+{
+  color: #ffffff;
+  font-size: 1.05em;
+  text-align: justify;
+  margin: 30px 0px;
+}
+
+
+/****************/
+/* Roadmap and Tokenomics */
+/****************/
+.background-one-image-three
+{
+  background-image: url('../../resources/images/roadmap-getschiffy.webp');
+  background-position: center;
+  background-size: cover;
+}
+
+/****************/
+/* Roadmap */
+/****************/
+/* Table Head */
+.head-item::before
+{
+  content: "";
+  position: absolute;
+  bottom: 46%;
+  left: 0px;
+  width: 100%;
+  height: 6px;
+  background: #ffffff;
+  border: 1px solid var(--brand-black);
+}
+
+.head-item.active-head::before, .head-item.active-head .head-square {
+  background: var(--brand-yellow) !important;
+}
+
+/* Roadmap Splide */
+.roadmap-splide-container .splide__pagination
+{
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.roadmap-splide-container .splide__pagination li 
+{
+  width: 18px;
+  height: 18px;
+  margin: 8px 0px;
+  border: 2px solid #fff;
+}
+
+.roadmap-splide-container .splide__pagination li .splide__pagination__page {
+  background-color: transparent;
+}
+
+.roadmap-mobile {
+  width: 300px !important;
+}
+
+.roadmap-mobile-list .road-item
+{ 
+  width: 300px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.roadmap-mobile-list .road-item.road-itemStyle
+{
+  width: 100%;
+  border-radius: 6px !important;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+/* Title */
+.roadmap-mobile-list .road-item .title-road
+{
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 4px;
+}
+
+.roadmap-mobile-list .road-item .title-road.active-quarter {
+  background-color: var(--brand-yellow);
+}
+
+.roadmap-mobile-list .road-item .title-road .title 
+{
+  color: var(--brand-black);
+  font-weight: bold;
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+
+/* List Road */
+.roadmap-mobile-list .road-item .body-road
+{
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background: var(--brand-black);
+}
+
+.roadmap-mobile-list .body-road .step 
+{
+  display: block;
+  font-size: 1em;
+  color: #ffffff;
+}
+
+.roadmap-mobile-list .body-road .road-step {
+  margin-bottom: 16px;
+}
+
+/****************/
+/* Team And News */
+/****************/
+.background-one-image-four
+{
+  background-image: url('../../resources/images/toTheMoon-getschiffy.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+/****************/
+/* Team */
+/****************/
+/* Splide */
+.splide-team {
+  margin-top: 40px;
+}
+
+.splide-team-item:active {
+  cursor: pointer;
+}
+
+.item-container 
+{
+  margin: auto;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Splide Photo  */
+.item-container .item-photo
+{
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid var(--brand-yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-container .item-photo .photo 
+{
+  width: 100%;
+  height: 100%;
+}
+
+.item-container .item-photo .photo.photo-matt 
+{
+  width: 110%;
+  height: 110%;
+}
+
+/* Splide Title */
+.item-container .item-title {
+  margin: 20px 0px;
+}
+
+.item-container .item-title .title 
+{
+  font-size: 1.35em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  margin: 0px;
+}
+
+.item-container .item-title .title .style-title 
+{
+  display: block;
+  margin-top: 8px !important;
+  font-weight: normal;
+  font-size: 1em;
+  color: var(--brand-yellow);
+  text-shadow: none !important;
+}
+
+/* Splide Arrows */
+.splide__arrows
+{
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.splide__arrows .splide__arrow
+{
+  width: 36px;
+  height: 36px;
+  background-color: var(--brand-yellow);
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.splide__arrows .splide__arrow svg 
+{
+  width: 28px;
+  height: 28px;
+}
+
+.splide__arrows .splide__arrow.arrow-prev {
+  transform: scaleX(-1);
+}
+
+/* Splide Pagination */
+.splide__pagination 
+{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-top: -20px;
+}
+
+.splide__pagination li 
+{
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 0px 6px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.splide__pagination li .splide__pagination__page
+{
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: none;
+
+}
+
+.splide__pagination li .splide__pagination__page.is-active 
+{
+  transition: .3s;
+  background-color: var(--brand-yellow);
+}
+
+/****************/
+/* News */
+/****************/
+.news-title::before
+{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff4f;
+  z-index: 500;
+}
+
+/* News list */
+.benzinga-picture {
+  width: 280px;
+}
+
+.journal-picture {
+  width: 330px;
+}
+
+/****************/
+/* NFTs*/
+/****************/
+.nfts-backgroundImg
+{
+  background-image: url('../../resources/images/nfts-getschiffy.webp');
+  background-position: bottom;
+  background-size: cover;
+}
+
+/****************/
+/* Mother Umbrella*/
+/****************/
+.mother-background
+{
+  background: #130806;
+  background: linear-gradient(270deg, #130806 0%, #132e36 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#130806",endColorstr="#132e36",GradientType=1);
+}
+
+/* Content */
+.mother-content .divider 
+{
+  width: 60%;
+  background-color: var(--brand-yellow);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/****************/
+/* Footer And Partnerships */
+/****************/
+.background-one-image-two
+{
+  background-image: url('../../resources/images/desert-getschiffy.webp');
+  background-position: top;
+  background-size: cover;
+}
+
+/****************/
+/* Partnerships */
+/****************/
+.brand-unity {
+  width: 90%;
+}
+
+.brand-prosperity {
+  width: 47%;
+}
+
+.brand-safeWages {
+  width: 100%;
+}
+
+.brand-andoToken {
+  width: 60%;
+}
+
+/****************/
+/* Footer */
+/****************/
+/* Left Content Social Links*/
+.social 
+{
+  width: 118%;
+  height: 118%;
+}
+
+.facebook-color {
+  background: #2363dd;
+}
+.instagram-color 
+{
+  background: #ffdc80;
+  background: -moz-linear-gradient(25deg, #ffdc80 0%, #f77737 25%, #fd1d1d 50%, #c13584 75%, #5851db 100%);
+  background: -webkit-linear-gradient(25deg, #ffdc80 0%, #f77737 25%, #fd1d1d 50%, #c13584 75%, #5851db 100%);
+  background: linear-gradient(25deg, #ffdc80 0%, #f77737 25%, #fd1d1d 50%, #c13584 75%, #5851db 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffdc80",endColorstr="#5851db",GradientType=1);
+}
+.twitter-color {
+  background: #00aaec;
+}
+.telegram-color {
+  background: #0088cc;
+}
+.discord-color {
+  background: #8c9eff;
+}
+
+.social.social-instagram 
+{
+  width: 100%;
+  height: 100%;
+}
+.social.social-twitter 
+{
+  width: 130%;
+  height: 130%;
+}
+.social.social-telegram 
+{
+  width: 75%;
+  height: 75%;
+}
+.social.social-discord 
+{
+  width: 85%;
+  height: 85%;
+}
+
+/************************
+  * Up Button *
+************************/
+.upButton {
+  visibility: hidden;
+}
+
+/************************
+  *** Media Querys ***
+************************/
+/* Media Large */
+@media all and (max-width: 1250px)
+{
+  /****************/
+  /* Header */
+  /****************/
+
+  .container-login .login-link {
+    margin-left: 12px;
+  }
+}
+
+@media all and (max-width: 1150px)
+{
+  /****************/
+  /* Header */
+  /****************/
+  .container-login .login-link 
+  {
+    font-size: 1.4em;
+    margin-left: 10px;
+  }
+}
+
+/* Media > Medium */
+@media all and (max-width: 992px) 
+{
+  /****************/
+  /* Tools */
+  /****************/
+  .padding-sections {
+    padding: 80px 60px;
+  }
+
+  .title-new-section {
+    font-size: 2.5em;
+  }
+
+  /****************/
+  /* Character */
+  /****************/
+  .character-content .character-picture {
+    width: 280px;
+  }
+
+  /****************/
+  /* Team */
+  /****************/
+  /* Item Container */
+  .item-container {
+    max-width: 380px !important;
+  }
+
+  /* Splide Photo  */
+  .item-container .item-photo
+  {
+    width: 180px;
+    height: 180px;
+  }
+
+  /* Splide Title  */
+  .item-container .item-title {
+    margin: 16px 0px;
+  }
+
+  .item-container .item-title .title 
+  {
+    font-size: 1.25em;
+    font-weight: bold;
+  }
+
+  .item-container .item-title .title .style-title {
+    font-size: .98em;
+  }
+
+  /****************/
+  /* Partnerships */
+  /****************/
+  .partner-container .partnerships {
+    margin-top: 40px;
+  }
+}
+
+@media all and (max-width: 950px) 
+{
+  /****************/
+  /* Gameplay */
+  /****************/
+  .gameplay-item .gamepaly-box 
+  {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gameplay-item .gameplay-description 
+  {
+    margin-left: 0px;
+    margin-top: 40px;
+    max-width: auto;
+    width: 80%;
+  }
+
+  .gameplay-item .gameplay-description .description {
+    margin: 0px;
+    margin-top: 30px;
+  }
+
+  /****************/
+  /* Character */
+  /****************/
+  .character-content {
+    flex-direction: column;
+  }
+
+  .character-content .character-picture {
+    width: 250px;
+  }
+
+  .character-content .character-description 
+  {
+    width: 80%;
+    margin-left: 0px;
+  }
+}
+
+@media all and (max-width: 800px)
+{
+  /****************/
+  /* Character */
+  /****************/
+  .character-content .character-description {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 650px)
+{
+  /****************/
+  /* Header */
+  /****************/
+  .container-login .login-link {
+    font-size: 1.3em;
+  }
+
+  /****************/
+  /* Gameplay */
+  /****************/
+  .gameplay-item .gameplay-description 
+  {
+    margin-top: 30px;
+    min-width: 250px;
+    width: 100%;
+  }
+
+  .gameplay-enemys-size 
+  {
+    width: 340px;
+    height: 200px;
+  }
+
+  /****************/
+  /* Character */
+  /****************/
+  .character-content .character-picture {
+    width: 240px;
+  }
+}
+
+@media all and (max-width: 600px)
+{
+  /* Toas */
+  #toast-container .toast
+  {
+    width: 200px !important;
+    bottom: 40px !important;
+  }
+}
+
+@media all and (max-width: 500px)
+{
+  /****************/
+  /* Gameplay */
+  /****************/
+  .gameplay-item .gameplay-picture 
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 290px;
+  }
+
+  .gameplay-item .gameplay-picture.gameplay-gold-picture {
+    width: 180px;
+  }
+
+  .gameplay-item .gameplay-picture .picture {
+    width: 100%;
+  }
+}
+
+/* Media < S */
+@media all and (max-width: 450px) 
+{
+  /****************/
+  /* Tools */
+  /****************/
+  .padding-sections {
+    padding: 80px 30px;
+  }
+
+  /****************/
+  /* Roadmap */
+  /****************/
+  .roadmap-mobile {
+    width: 100% !important;
+  }
+}
+
+@media all and (max-width: 350px)
+{
+  /****************/
+  /* Gameplay */
+  /****************/
+  .gameplay-item .gameplay-picture {
+    width: 250px;
+  }
+
+  /****************/
+  /* Character */
+  /****************/
+  .character-content .character-picture {
+    width: 220px;
+  }
+
+  /****************/
+  /* Roadmap */
+  /****************/
+  .roadmap-mobile-list .road-item .title-road .title {
+    font-size: 1.2em;
+  }
+  
+  /****************/
+  /* News */
+  /****************/
+  .benzinga-picture {
+    width: 200px;
+  }
+  .journal-picture {
+    width: 250px;
+  }
+}
