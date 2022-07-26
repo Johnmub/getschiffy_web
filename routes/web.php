@@ -1,32 +1,23 @@
 <?php
 
 use App\Http\Controllers\Newsletter;
+use App\Http\Middleware\LocaleValid;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
 
 /*==================
 Home
 ==================*/
-Route::get('/{locale}', function ($locale = 'en') 
-{
-  if(!in_array($locale, ['en', 'es', 'zh', 'hi', 'tl'])) { return redirect('/en'); }
-
-  App::setLocale($locale);
-  
+Route::get('/{locale}', function ($locale = 'en') {
   return view('page.index', ['locale' => strtolower($locale)]);
-})->name('home');
+})->name('home')->middleware(LocaleValid::class);
 
 /*==================
 NFTs
 ==================*/
-Route::get('/{locale}/nfts', function ($locale = 'en') 
-{
-  if(!in_array($locale, ['en', 'es', 'zh', 'hi', 'tl'])) { return redirect('/en/nfts'); }
-
-  App::setLocale($locale);
-  
+Route::get('/{locale}/nfts', function ($locale = 'en') {
   return view('page.nfts', ['locale' => strtolower($locale)]);
-})->name('nfts');
+})->name('nfts')->middleware(LocaleValid::class);
 
 /*==================
 Newsletter

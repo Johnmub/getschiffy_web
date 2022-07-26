@@ -314,7 +314,7 @@
       <div class="text-center font-bold md:mb-[80px] mt-6 overflow-hidden rounded">
         <p class="overflow-hidden text-lg flex flex-col sm:flex-row justify-center items-stretch">
           <span class="bg-yellow inline-block py-[4px] px-[6px]">@lang('ido_details.contract_address')</span>
-          <a href="https://bscscan.com/address/0x4aa6027de5acf37ef2221af51c5a8930e44e52f6" target="_blank" class="text-white bg-black text-base font-normal flex items-center justify-center py-[4px] px-[6px]">0x4aa6027De5acf37eF2221Af51c5a8930E44e52F6</a>
+          <a href="https://bscscan.com/address/0x238eeffc574d93c8bed5e960b2df7ddb5a22d402" target="_blank" class="text-white bg-black text-base font-normal flex items-center justify-center py-[4px] px-[6px]">0x238EeffC574d93C8bEd5E960b2DF7dDB5A22d402</a>
         </p>
       </div>
     </div>
@@ -367,7 +367,7 @@
 
           <!-- Buy Button -->
           <div class="bg-white rounded select-none">
-            <a href="https://www.dextools.io/app/bnb/pair-explorer/0xf4521f211dacad3064f9b589878b5ea965cc48ea" target="_blank" rel="noopener noreferrer" class="text-[#00ADCE] text-lg text-center font-bold w-[180px] py-[8px] px-[16px] transition-all duration-500 hover:shadow-md hover:shadow-[#00ADCE] flex justify-center items-center">
+            <a href="https://www.dextools.io/app/bnb/pair-explorer/0xea1b1fc53d286c5b8cf920c08c91aa1a637a1b47" target="_blank" rel="noopener noreferrer" class="text-[#00ADCE] text-lg text-center font-bold w-[180px] py-[8px] px-[16px] transition-all duration-500 hover:shadow-md hover:shadow-[#00ADCE] flex justify-center items-center">
               <div class="mr-[3px]"><img src="/static/resources/images/platforms/dextools_logo_mini.webp" class="w-[30px]" alt="Dextools Mini"></div>
               <span>@lang('ido_details.dextool_buy')</span>
             </a>

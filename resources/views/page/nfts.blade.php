@@ -48,7 +48,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/splide-core.min.css">
   <link rel="stylesheet" href="/static/css/fonts.css">
-  <link rel="stylesheet" href="/static/css/home/app_v1.2.4.min.css">
+  <link rel="stylesheet" href="/static/css/home/app_v1.2.8.min.css">
   <link rel="stylesheet" href="/static/css/home/nfts/style_v1.0.5.min.css">
   
   <!-- Cookies -->
