@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ApiServer;
 use App\Http\Controllers\Vip_addresses;
 use App\Http\Controllers\Cookies;
 use App\Http\Middleware\Cors;
@@ -13,6 +14,11 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::middleware([Cors::class])->group(function () 
 {
+    Route::post('/connect_wallet', [ApiServer::class, 'connect_wallet']);
+    Route::post('/connect_game', [ApiServer::class, 'connect_game']);
+    Route::post('/add_game_email', [ApiServer::class, 'add_game_email']);
+    Route::post('/send_game_email', [ApiServer::class, 'sendAgain_verifyEmail']);
+
     // Save data
     Route::post('/save_vip_data', [Vip_addresses::class, 'save_data']);
 

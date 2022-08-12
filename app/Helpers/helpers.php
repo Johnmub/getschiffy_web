@@ -37,16 +37,16 @@ function verify_email($email_resquest)
   ));
 }
 
+define('MIN_CHARACTER_IP', 9);
+
 function minify_clientIp($client_ip)
 {
-  define('MIN_CHARACTER_IP', 9);
-
   $clientIp_out = preg_replace('/\s+/', '', $client_ip);
 
   if(empty($clientIp_out) || strlen(strval($clientIp_out)) < MIN_CHARACTER_IP || gettype($clientIp_out) != 'string') { 
     return false;
   }
-
+  
   $last_point = strrpos($clientIp_out, '.');
   $clientIp_out = substr($clientIp_out, 0, $last_point);
 

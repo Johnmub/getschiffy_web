@@ -6,7 +6,7 @@ return [
 
     'allowed_methods' => ['GET', 'POST'],
 
-    'allowed_origins' => ['https://getschiffy.com', 'https://nft.getschiffy.com', 'https://marketplace.getschiffy.com'],
+    'allowed_origins' => ['*'],
 
     'allowed_origins_patterns' => [],
 

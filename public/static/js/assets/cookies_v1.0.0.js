@@ -15,7 +15,7 @@ function verifyClient_ip(ip_user)
   $.ajax({
     method: 'POST',
     dataType: "json",
-    url: ('https://getschiffy.com/api/check_clientip'),
+    url: ('http://localhost:8000/api/check_clientip'),
     data: { client_ip: ip_user},
     success: function(response) 
     {
@@ -49,7 +49,7 @@ function verifyClient_sign(ip_user)
   $.ajax({
     method: 'POST',
     dataType: "json",
-    url: ('https://getschiffy.com/api/check_ipsign'),
+    url: ('http://localhost:8000/api/check_ipsign'),
     data: { client_ip: ip_user},
     success: function(response) 
     {
